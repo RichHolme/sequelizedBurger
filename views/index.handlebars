@@ -1,18 +1,38 @@
-
 <div class="container">
 
-  <h1>Burgers!</h1>
+  <div class="row">
+    <div class="col-md-8 col-xs-8">
+      <img id="logo" src="/assets/img/BURGER_TEXT.jpg">
+    </div>
+    <div id="two" class="col-md-4 col-xs-4">
+      <h1 id="twoText">2.0</h1>
+    </div>
+  </div>
+
+  <div id="newBurger" class="row">
+
+      <h2>Create A New Burger</h2>
+
+      <form class="create-form">
+
+        <div class="form-group">
+          <label for="ca"><h3>Burger Name:</h3></label>
+          <input type="text" id="name" name="name">
+
+          <button id="submitBtn" class="btn btn-default" type="submit">Add Burger</button>
+        </div>
+
+      </form>
+
+  </div>
 
   <div class="row">
 
-    <div id="burgerContainer" class="col-md-12">
-
-      <div id = notDevoured>
-
-        
-          <h2>Burgers that aren't devoured!</h2>
-
-          <div class="list">
+    <div class="col-md-6">
+      <h2 class="header">Available Burgers</h2>
+      <div class="burgerContainer">
+    
+        <div class="list">
 
             <ol>
               {{#each burgers}}
@@ -28,13 +48,13 @@
 
           </div>
 
-        
-
       </div>
 
-      <div id = "devoured">
+    </div>
 
-        <h2>Burgers that are devoured!</h2>
+    <div class="col-md-6">
+      <h2 class="header">Devoured Burgers</h2> 
+      <div class="burgerContainer">    
 
         <div class="list">
 
@@ -50,29 +70,7 @@
           </ol>
 
         </div>
-
-      </div> 
-
-    </div>
-
-  </div>
-
-  <div id="newBurger">
-
-    <div>
-
-      <h2>Add a burger</h2>
-
-      <form class="create-form">
-
-        <div class="form-group">
-          <label for="ca">Burger Name:</label>
-          <input type="text" id="name" name="name">
-
-          <button id="submitBtn" class="btn btn-default" type="submit">Add Burger</button>
-        </div>
-
-      </form>
+      </div>
 
     </div>
 

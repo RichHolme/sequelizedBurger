@@ -1,15 +1,22 @@
-#notDevoured,
-#devoured,
-#newBurger{
-	/*text-align: center;*/
-	/*margin: auto;*/
-	/*background-color: blue;*/
-	margin: 10px;
-	border: 3px white solid;
-	/*width: 100%;*/
-	/*background-color: white;
-	opacity: .7;*/
-	background-color: rgba(0,0,0,0.4)
+.burgerContainer{
+	text-align: left;
+}
+
+.header{
+	margin-bottom: 20px !important; 
+}
+
+input{
+	border: solid 1px #ccc !important
+	line-height: 3% !important;
+	margin-left: 1% !important; 
+}
+
+#logo{
+	width: 55%;
+	height: 25%;
+	margin-top: 10px;
+	float: right;
 }
 
 li{
@@ -21,11 +28,21 @@ li{
 
 .container{
 	text-align: center;
-	background-image: url("../img/background.jpg");
-	color: white;
-	/*font-weight: bold;*/
 }
 
-#name{
-	color: black;
+#submitBtn{
+	margin-top: -.5%;
+}
+
+#twoText{
+	/*float: left;*/
+	font-weight: 900;
+	font-size: 90px !important;
+}
+
+#two{
+	text-align: left;
+
+	/*color: #f5f50a;*/
+	/*color: gray;*/
 }

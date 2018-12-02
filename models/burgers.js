@@ -1,24 +1,7 @@
-var orm = require("../config/orm.js");
-
-var burgers = {
-  all: function(cb) {
-    orm.selectAll("burgers", function(res) {
-      cb(res);
-    });
-  },
-  // The variables cols and vals are arrays.
-  create: function(cols, vals, cb) {
-    console.log(cols, vals);
-    orm.insertOne("burgers", cols, vals, function(res) {
-      cb(res);
-    });
-  },
-  update: function(objColVals, condition, cb) {
-    console.log(objColVals, condition);
-    orm.updateOne("burgers", objColVals, condition, function(res) {
-      cb(res);
-    });
-  }
+module.exports = function(sequelize, DataTypes) {
+  var Burgers = sequelize.define("Burgers", {
+    burger_nae: DataTypes.STRING,
+    devoured: DataTypes.BOOLEAN
+  });
+  return Burgers;
 };
-
-module.exports = burgers;
